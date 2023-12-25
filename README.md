@@ -1,4 +1,4 @@
-My user-config for [[Astronvim](https://astronvim.com/)]
+My user-config for [Astronvim](https://astronvim.com/)
 
 ## Installation
 ```bash
