@@ -8,7 +8,7 @@ if vim.g.neovide then
   vim.g.neovide_cursor_trail_size = 0.10
   vim.g.neovide_cursor_animate_command_line = false
   vim.g.neovide_hide_mouse_when_typing = false
-  vim.g.neovide_theme = 'auto'
+  vim.g.neovide_theme = "auto"
   vim.g.neovide_remember_window_size = true
   vim.g.neovide_cursor_antialiasing = true
 end
@@ -48,14 +48,15 @@ return {
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
-          "docker",
-          "go",
-          "html",
-          "htmx",
-          "javascript",
-          "json",
-          "lua",
-          "sh",
+          -- "docker",
+          -- "go",
+          -- "html",
+          -- "htmx",
+          -- "javascript",
+          -- "json",
+          -- "lua",
+          -- "sh",
+          -- "toml",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -82,7 +83,14 @@ return {
     performance = {
       rtp = {
         -- customize default disabled vim plugins
-        disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
+        disabled_plugins = {
+          "tohtml",
+          "gzip",
+          "matchit",
+          "zipPlugin",
+          "netrwPlugin",
+          "tarPlugin",
+        },
       },
     },
   },
