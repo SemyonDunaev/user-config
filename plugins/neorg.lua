@@ -3,38 +3,29 @@ return {
     "nvim-neorg/neorg",
     lazy = false,
     build = ":Neorg sync-parsers",
-    dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       load = {
         ["core.concealer"] = {},
         ["core.defaults"] = {},
         ["core.summary"] = {},
-        ["core.ui.calendar"] = {},
-        ["core.completion"] = {
-          config = {
-            engine = "nvim-cmp",
-          },
-        },
         ["core.dirman"] = {
           config = {
             workspaces = {
-              dcms = "~/notes/dcms",
               default = "~/notes/default",
               develop = "~/notes/develop",
-              journal = "~/notes/journal",
-              learn = "~/notes/learn",
+              job = "~/notes/job",
             },
           },
         },
         ["core.journal"] = {
           config = {
-            use_template = true,
-            workspace = "journal",
+            workspace = "default",
           },
         },
-        ["core.keybinds"] = {
+        ["core.qol.todo_items"] = {
           config = {
-            default_keybinds = false,
+            create_todo_items = true,
+            create_todo_parents = true,
           },
         },
       },
