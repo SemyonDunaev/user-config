@@ -65,5 +65,18 @@ return {
       ":Telescope neovim-project discover<cr>",
       desc = "Load session",
     },
+    -- Todo-comments:
+    ["<leader>T"] = { name = "Todo" },
+    ["<leader>Tq"] = { ":TodoQuickFix<cr>", desc = "QuickFix" },
+    ["<leader>Tt"] = { ":TodoTelescope<cr>", desc = "Project todos" },
+    ["<leader>Tl"] = { ":TodoLocList<cr>", desc = "Local todos" },
+    ["t]"] = {
+      function() require("todo-comments").jump_next() end,
+      desc = "Next todo",
+    },
+    ["t["] = {
+      function() require("todo-comments").jump_prev() end,
+      desc = "Prev todo",
+    },
   },
 }
