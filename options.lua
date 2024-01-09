@@ -2,12 +2,13 @@
 return {
   opt = {
     -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
+    conceallevel = 3, -- sets vim.opt.conceallevel
     number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = true, -- sets vim.opt.wrap
+    relativenumber = true, -- sets vim.opt.relativenumber
     scrolloff = 3,
+    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    spell = false, -- sets vim.opt.spell
+    wrap = true, -- sets vim.opt.wrap
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
