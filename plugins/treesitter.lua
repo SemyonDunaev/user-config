@@ -13,6 +13,7 @@ return {
         "json",
         "lua",
         "norg",
+        "toml",
         "yaml",
       })
   end,
